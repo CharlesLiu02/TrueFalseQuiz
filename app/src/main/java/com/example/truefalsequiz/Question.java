@@ -25,7 +25,7 @@ public class Question {
     }
 
     public boolean checkAnswer(boolean answer){
-        if(answer == answer) {
+        if(answer == this.answer) {
             return true;
         }
         else{
