@@ -43,6 +43,15 @@ public class Quiz {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Quiz{" +
+                "score=" + score +
+                ", currentQuestion=" + currentQuestion +
+                ", questions=" + questions +
+                '}';
+    }
+
     public boolean isThereAnotherQuestion() {
         if(currentQuestion < questions.size()){
             return true;

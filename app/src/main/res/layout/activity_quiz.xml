@@ -8,7 +8,7 @@
     tools:layout_editor_absoluteY="81dp">
 
     <TextView
-        android:id="@+id/textView_main_question"
+        android:id="@+id/textView_quiz_question"
         android:layout_width="340dp"
         android:layout_height="168dp"
         android:layout_marginBottom="8dp"
@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.26" />
 
     <Button
-        android:id="@+id/button_main_false"
+        android:id="@+id/button_quiz_false"
         android:layout_width="122dp"
         android:layout_height="79dp"
         android:layout_marginBottom="8dp"
@@ -37,13 +37,14 @@
         app:layout_constraintVertical_bias="0.335" />
 
     <Button
-        android:id="@+id/button_main_true"
+        android:id="@+id/button_quiz_true"
         android:layout_width="122dp"
         android:layout_height="79dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="296dp"
+        android:onClick="onClick"
         android:text="True"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,7 +54,7 @@
         app:layout_constraintVertical_bias="0.335" />
 
     <TextView
-        android:id="@+id/textView_main_questionNumber"
+        android:id="@+id/textView_quiz_questionNumber"
         android:layout_width="142dp"
         android:layout_height="39dp"
         android:layout_marginBottom="8dp"

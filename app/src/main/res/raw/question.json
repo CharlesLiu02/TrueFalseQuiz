@@ -1,20 +1,19 @@
-{
-  "questions": [
+
+  [
     {
-      "question": "1.The First World War started with a railroad attack in Berlin. ",
+      "question": "The First World War started with a railroad attack in Berlin. ",
       "answer": false
     },
     {
-      "question": "2.The snowy owl’s legs are covered with feathers.",
+      "question": "The snowy owl’s legs are covered with feathers.",
       "answer": true
     },
     {
-      "question": "3. Four American presidents have been assassinated.",
+      "question": "Four American presidents have been assassinated.",
       "answer": true
     },
     {
-      "question": "4. The end of the First World War and the attack on the World Trade Center both took place on September 11.",
+      "question": "The end of the First World War and the attack on the World Trade Center both took place on September 11.",
       "answer": false
     }
   ]
-}
