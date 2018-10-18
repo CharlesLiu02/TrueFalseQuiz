@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">" 진정한 거짓 퀴즈"</string>
+    <string name="quiz_false">참된</string>
+    <string name="quiz_true">" 그릇된"</string>
+    <string name="quiz_outOfTen">" 10 점 만점에"</string>
+    <string name="quiz_QuizNumberQuestion">"의문 "</string>
+    <string name="quiz_score">"점수: "</string>
+    <string name="quiz_correct">" 정확한 답변!"</string>
+    <string name="quiz_wrong">" 잘못된 답변!"</string>
+</resources>

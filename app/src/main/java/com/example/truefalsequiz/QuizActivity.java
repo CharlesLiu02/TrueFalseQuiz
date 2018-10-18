@@ -46,9 +46,9 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
         quiz = new Quiz(0, 0, 0, questionList);
 
-        textViewQuestionNumber.setText("Question " + quiz.getCurrentQuestionDisplay() + " out of 10");
+        textViewQuestionNumber.setText(getString(R.string.quiz_QuizNumberQuestion) + quiz.getCurrentQuestionDisplay() + getString(R.string.quiz_outOfTen));
         textViewQuestion.setText(quiz.getQuestions().get(0).getQuestion());
-        textViewScore.setText("Score: " + quiz.getScore());
+        textViewScore.setText(getString(R.string.quiz_score) + quiz.getScore());
 
     }
 
@@ -88,38 +88,38 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         switch(view.getId()){
             case R.id.button_quiz_false:
                 if(quiz.getQuestions().get(quiz.getCurrentQuestion()).isAnswer() == false){
-                    Toast.makeText(this, "CORRECT ANSWER!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, R.string.quiz_correct, Toast.LENGTH_SHORT).show();
                     quiz.setScore(quiz.getScore() + 1);
                 }
                 else
                 {
-                    Toast.makeText(this, "WRONG ANSWER!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, R.string.quiz_wrong, Toast.LENGTH_SHORT).show();
                 }
                 if(quiz.isThereAnotherQuestion()) {
                     quiz.nextQuestion();
-                    textViewQuestionNumber.setText("Question " + quiz.getCurrentQuestionDisplay() + " out of 10");
+                    textViewQuestionNumber.setText(getString(R.string.quiz_QuizNumberQuestion) + quiz.getCurrentQuestionDisplay() + getString(R.string.quiz_outOfTen));
                     textViewQuestion.setText(quiz.getQuestions().get(quiz.getCurrentQuestion()).getQuestion());
-                    textViewScore.setText("Score: " + quiz.getScore());
+                    textViewScore.setText(getString(R.string.quiz_score) + quiz.getScore());
                 }
                 else
                 {
-                    //send to new activity
+
                 }
                 break;
             case R.id.button_quiz_true:
                 if(quiz.getQuestions().get(quiz.getCurrentQuestion()).isAnswer() == true){
-                    Toast.makeText(this, "CORRECT ANSWER!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, getString(R.string.quiz_true), Toast.LENGTH_SHORT).show();
                     quiz.setScore(quiz.getScore() + 1);
                 }
                 else
                 {
-                    Toast.makeText(this, "WRONG ANSWER!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, getString(R.string.quiz_wrong), Toast.LENGTH_SHORT).show();
                 }
                 if(quiz.isThereAnotherQuestion()) {
                     quiz.nextQuestion();
-                    textViewQuestionNumber.setText("Question " + quiz.getCurrentQuestionDisplay() + " out of 10");
+                    textViewQuestionNumber.setText(getString(R.string.quiz_QuizNumberQuestion) + quiz.getCurrentQuestionDisplay() + getString(R.string.quiz_outOfTen));
                     textViewQuestion.setText(quiz.getQuestions().get(quiz.getCurrentQuestion()).getQuestion());
-                    textViewScore.setText("Score: " + quiz.getScore());
+                    textViewScore.setText(getString(R.string.quiz_score) + quiz.getScore());
                 }
                 else
                 {
