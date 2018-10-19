@@ -1,6 +1,7 @@
 package com.example.truefalsequiz;
 
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -20,6 +21,8 @@ import java.util.List;
 public class QuizActivity extends AppCompatActivity implements View.OnClickListener {
 
     public static final String TAG = "QuizActivity";
+    public static final String EXTRA_MESSAGE = "finish";
+    public static final int REQUEST = 1;
 
     private TextView textViewQuestionNumber;
     private TextView textViewQuestion;
@@ -103,12 +106,13 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 else
                 {
-
+                    sendToEnd(view);
+                    recreate();
                 }
                 break;
             case R.id.button_quiz_true:
                 if(quiz.getQuestions().get(quiz.getCurrentQuestion()).isAnswer() == true){
-                    Toast.makeText(this, getString(R.string.quiz_true), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, getString(R.string.quiz_correct), Toast.LENGTH_SHORT).show();
                     quiz.setScore(quiz.getScore() + 1);
                 }
                 else
@@ -123,9 +127,19 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 else
                 {
-                    //send to new activity
+                    sendToEnd(view);
+                    recreate();
                 }
                 break;
         }
     }
+
+    private void sendToEnd(View view) {
+        Intent intentFinish = new Intent(this, ScoreActivity.class);
+        String score = quiz.getScore() + "";
+        intentFinish.putExtra(EXTRA_MESSAGE, score);
+        startActivity(intentFinish);
+
+    }
+
 }
