@@ -8,4 +8,7 @@
     <string name="quiz_score">"점수: "</string>
     <string name="quiz_correct">" 정확한 답변!"</string>
     <string name="quiz_wrong">" 잘못된 답변!"</string>
+    <string name="score_finalScore">"최종 점수: "</string>
+    <string name="score_gameOver">"게임 끝! "</string>
+    <string name="score_playAgain">다시 재생</string>
 </resources>

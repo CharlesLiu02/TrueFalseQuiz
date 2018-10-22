@@ -56,7 +56,7 @@ public class Quiz {
     }
 
     public boolean isThereAnotherQuestion() {
-        if(currentQuestion < questions.size()){
+        if(currentQuestion < questions.size() - 1){
             return true;
         }
         else{
