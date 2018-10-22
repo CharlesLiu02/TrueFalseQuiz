@@ -108,7 +108,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 else
                 {
-                    sendToEnd(view);
+                    sendToEnd();
                     recreate();
                 }
                 break;
@@ -129,14 +129,14 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 else
                 {
-                    sendToEnd(view);
+                    sendToEnd();
                     recreate();
                 }
                 break;
         }
     }
 
-    private void sendToEnd(View view) {
+    private void sendToEnd() {
         Intent intentFinish = new Intent(this, ScoreActivity.class);
         String score = quiz.getScore() + "";
         intentFinish.putExtra(EXTRA_MESSAGE, score);
