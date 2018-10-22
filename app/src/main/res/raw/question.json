@@ -15,5 +15,29 @@
     {
       "question": "The end of the First World War and the attack on the World Trade Center both took place on September 11.",
       "answer": false
+    },
+    {
+      "question": "The Buffalo Bills hold the unfortunate record of 4 consecutive losses at the Super Bowl.",
+      "answer": true
+    },
+    {
+      "question": "After having won all their games in the 2007 regular season, the New England Patriots won the Super Bowl in 2008.",
+      "answer": false
+    },
+    {
+      "question": "Michael Phelps’ 28 Olympic medals are all gold medals.",
+      "answer": false
+    },
+    {
+      "question": "Bo Jackson was selected for the Major League Baseball All-Star Game and the American Football League All-Star Game.",
+      "answer": true
+    },
+    {
+      "question": "The colors of a rainbow always appear in the same order.",
+      "answer": true
+    },
+    {
+      "question": "Adult humans and adult dogs have the same number of teeth.",
+      "answer": false
     }
   ]

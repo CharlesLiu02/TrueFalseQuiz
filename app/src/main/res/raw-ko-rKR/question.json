@@ -15,5 +15,29 @@
     {
       "question": "제 1 차 세계 대전의 종식과 세계 무역 센터에 대한 공격은 모두 9 월 11 일에 일어났습니다.",
       "answer": false
+    },
+    {
+      "question": "Buffalo Bills 는 Super Bowl 에서 4 연패의 불행한 기록을 가지고 있습니다.",
+      "answer": true
+    },
+    {
+      "question": "2007 년 정규 시즌에 모든 경기에서 승리 한 후 뉴 잉글랜드 패트리어츠는 2008 년 슈퍼 볼에서 우승했습니다.",
+      "answer": false
+    },
+    {
+      "question": "Michael Phelps 의 28 개의 올림픽 메달은 모두 금메달입니다.",
+      "answer": false
+    },
+    {
+      "question": "보 잭슨은 메이저 리그 야구 올스타 게임과 아메리칸 풋볼 리그 올스타 게임으로 선정되었습니다.",
+      "answer": true
+    },
+    {
+      "question": "무지개의 색상은 항상 같은 순서로 나타납니다.",
+      "answer": true
+    },
+    {
+      "question": "성인 인간과 성인 개는 같은 수의 치아를 가지고 있습니다.",
+      "answer": false
     }
   ]

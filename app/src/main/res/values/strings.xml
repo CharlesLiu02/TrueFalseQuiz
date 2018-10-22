@@ -7,7 +7,7 @@
     <string name="quiz_score">"Score: "</string>
     <string name="quiz_correct">CORRECT ANSWER!</string>
     <string name="quiz_wrong">WRONG ANSWER!</string>
-    <string name="score_finalScore">Final Score: </string>
-    <string name="score_gameOver">GAME OVER!</string>
-    <string name="score_playAgain">Play Again</string>
+    <string name="score_finalScore">"Final Score: "</string>
+    <string name="score_gameOver">"GAME OVER!"</string>
+    <string name="score_playAgain">"Play Again"</string>
 </resources>

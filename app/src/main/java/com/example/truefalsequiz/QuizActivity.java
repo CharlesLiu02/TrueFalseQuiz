@@ -16,6 +16,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class QuizActivity extends AppCompatActivity implements View.OnClickListener {
@@ -46,6 +47,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         Question[] questions = gson.fromJson(sJSON, Question[].class);
         // convert your array to a list using the Arrays utility class
         List<Question> questionList = Arrays.asList(questions);
+        Collections.shuffle(questionList);
 
         quiz = new Quiz(0, 0, 0, questionList);
 
